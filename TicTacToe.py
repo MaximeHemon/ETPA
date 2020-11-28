@@ -30,9 +30,9 @@ print("6 7 9")
         grille(compteur): "_"
         return()
 def ajoutesymbole
-def testeVictoireVerticale
-def testeVictoireHorizontale
-def testeVictoireDiagonale
+def testVV
+def testVH
+def testVD
 
 
 def affichegrille (grille):
@@ -45,22 +45,21 @@ joueur = 0
 victoire = 0 
 tour = 0 
 
-def grille():
+def grille(values):
     print("\n")
     print("\t     |     |")
-    print("\t  {}  |  {}  |  {}".format([0],[1],[2]))
+    print("\t  {}  |  {}  |  {}".values([0],[1],[2]))
     print('\t_____|_____|_____')
  
     print("\t     |     |")
-    print("\t  {}  |  {}  |  {}".format([3],[4],[5]))
+    print("\t  {}  |  {}  |  {}".values([3],[4],[5]))
     print('\t_____|_____|_____')
  
     print("\t     |     |")
  
-    print("\t  {}  |  {}  |  {}".format([6],[7],[8]))
+    print("\t  {}  |  {}  |  {}".values([6],[7],[8]))
     print("\t     |     |")
     print("\n")
-
 
 while True:
     grille ()
@@ -71,3 +70,8 @@ def ajoutesymbole (grille,i):
     if (grille[i]=="vide" and joueur):
         grille[i] = "X"
     if (grille[i]=="vide" and joueur):
+
+#def testVV
+#def testVH
+#def testVD
+#def testJeuNul
