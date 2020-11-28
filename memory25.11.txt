@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML, CSS and JavaScript demo</title>
+</head>
+<body>
+<!-- Start your code here -->
+  
+    <h1 classe="Titre">Memory</h1>
+  <p class="follow">Follow <br>Orders: J1</p>
+<section class="ligne1">
+    <div class="carte" id="carte1" src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Joker_%28carte_de_jeu%29.jpg">Carte 1</div> 
+    <div class="carte" id="carte2">Carte 2</div>
+    <div class="carte" id="carte3">Carte 3</div>
+  </section>
+
+  <section class="ligne2">
+    <div class="carte" id="carte4">Carte 4</div>
+    <div class="carte" id="carte5">Carte 5</div>
+    <div class="carte" id="carte6">Carte 6</div>
+
+  </section>
+   
+
+
+<!-- End your code here -->
+</body>
+</html>
+
+
+
+CSS:
+body{
+  background-color: #521dd6;
+}
+
+
+
+h1{
+  display:  flex;
+  color:  white;
+  font-size:  50px;
+  text-align: center;
+  border: 1px solid white;
+  border-width: 5px ;
+  padding: px 2px 3px 500px ;
+  width: 200px;
+}  
+  p{
+  color:  white;
+  font-size:  30px;
+  display:  flex;
+  border: 5px solid white;
+  width: 200px;
+}
+.ligne1{
+  display: flex;
+  justify-content: space-around;
+}
+.ligne2{
+  display: flex;
+  justify-content: space-around;
+}
+.carte{
+  display:  flex;
+  border: 5px solid black;
+  width: 5%;
+  height: 100px;
+  background-color: white;
+ }

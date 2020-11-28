@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html>
+
+var nombre = document.getElementById("slide");
+var sortie = document.getElementById("solution")
+var nombreAlea = Math.round(Math.random() * (100 - 1) + 1);
+var solution = document.getElementById("sortie");
+
+<section>
+  <div id="sortie"><h2>Bienvenue dans le juste prix</h2></div>
+  <div id="solution"><h3>Valeur Modifiable</h3></div>
+</section>
+
+<input type="number" id="slide"
+
+
+</html>
+
+
+
+#JAVA:
+   
+nombre.oninput = function(){
+  sortie.innerHTML = nombre.value;
+  if(nombre.value > nombreAlea){
+    solution.innerHTML = "C'est plus petit !";
+  }else if (nombre.value < nombreAlea){
+    solution.innerHTML = "C'est plus grand !";
+  }else{
+    solution.innerHTML = "Gagné !"
+  }
+}
